@@ -3,9 +3,9 @@ import Conection from '../../services/connections/server-conection.service';
 
 function connect_credential(req:any,res:any,next:any){
     const objeto:IConection = {
-        host:"172.21.65.35",
+        host:"",
         username:"root",
-        password:"c-3-r-t-1-f-1-c-4-c-i-o-n"
+        password:""
     }
     const server = new Conection(objeto);
     server.conect_ssh_with_pass()
